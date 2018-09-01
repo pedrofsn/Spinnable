@@ -1,7 +1,7 @@
 package br.com.redcode.spinnable.sample
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import android.support.v7.app.AppCompatActivity
 import br.com.redcode.spinnable.library.extensions_functions.setSpinnable
 import br.com.redcode.spinnable.library.model.Spinnable
 import kotlinx.android.synthetic.main.activity_main.*
@@ -18,8 +18,7 @@ class MainActivity : AppCompatActivity() {
             content.add(spinnable)
         }
 
-        val callback : (String, Int) -> Unit = {
-            id, index ->
+        val callback: (String, Int) -> Unit = { id, index ->
             textViewSelectedItem.text = "ID $id and index $index selected"
         }
 
