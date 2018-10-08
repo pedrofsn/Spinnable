@@ -2,7 +2,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.github.dcendents.android-maven'
+
 group = 'com.github.pedrofsn'
+version = '1.0.4.1'
 
 android {
     compileSdkVersion 28
@@ -11,7 +13,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0.4"
+        versionName "1.0.4.1"
     }
 
     androidExtensions {
