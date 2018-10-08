@@ -7,5 +7,5 @@
     android:gravity="center_vertical"
     android:minHeight="?android:attr/listPreferredItemHeightSmall"
     android:textAppearance="?android:attr/textAppearanceMediumInverse"
-    android:textColor="@color/text_color_hint"
+    android:textColor="@color/spinnable_text_color"
     tools:text="@tools:sample/cities" />

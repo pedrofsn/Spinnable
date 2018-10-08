@@ -35,8 +35,8 @@ class AdapterSpinneable(
         label.text = getItem(position)
 
         val color = when {
-            hasDefault && position == 0 -> R.color.text_color_hint
-            else -> android.R.color.black
+            hasDefault && position == 0 -> R.color.spinnable_hint_color
+            else -> R.color.spinnable_text_color
         }
 
         label.setTextColor(ContextCompat.getColor(context, color))
