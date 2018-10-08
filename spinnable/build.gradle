@@ -11,7 +11,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0.2"
+        versionName "1.0.3"
     }
 
     androidExtensions {
@@ -21,6 +21,6 @@ android {
 }
 
 dependencies {
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.70'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.71'
     implementation 'com.android.support:appcompat-v7:28.0.0'
 }
