@@ -44,7 +44,17 @@ class AdapterSpinneable(
         return row
     }
 
-    fun getSpinnableSelected(): Spinnable? = mObjects.firstOrNull { it.selected }
+    fun getSpinnableSelected(): Spinnable? {
+        val indexSelected = getIndexSpinnableSelected()
+        indexSelected?.let {
+            if (hasDefault && indexSelected > 0) {
+                return mObjects[it]
+            }
+        }
+
+        return null
+    }
+
     fun getIndexSpinnableSelected(): Int? = mObjects.indexOfFirst { it.selected }
 
     override fun getItem(position: Int): String? = (super.getItem(position) as Spinnable).description
