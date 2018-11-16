@@ -55,7 +55,14 @@ class AdapterSpinneable(
         return null
     }
 
-    fun getIndexSpinnableSelected(): Int? = mObjects.indexOfFirst { it.selected }
+    fun getIndexSpinnableSelected(): Int? {
+        val indexSpinnableSlected = mObjects.indexOfFirst { it.selected }
+        if (indexSpinnableSlected == -1 && hasDefault) {
+            return 0
+        }
+
+        return null
+    }
 
     override fun getItem(position: Int): String? = (super.getItem(position) as Spinnable).description
 
