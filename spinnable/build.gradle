@@ -1,10 +1,11 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'kotlin-kapt'
 
+apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.pedrofsn'
-version = '1.0.4.1'
+
 
 android {
     compileSdkVersion 28
@@ -13,7 +14,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0.4.1"
+        versionName "1.0"
     }
 
     androidExtensions {
@@ -23,6 +24,6 @@ android {
 }
 
 dependencies {
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.71'
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
 }

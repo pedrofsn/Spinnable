@@ -1,7 +1,7 @@
 package br.com.redcode.spinnable.sample
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import br.com.redcode.spinnable.library.extensions_functions.setSpinnable
 import br.com.redcode.spinnable.library.model.Spinnable
 import kotlinx.android.synthetic.main.activity_main.*
